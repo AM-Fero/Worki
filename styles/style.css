@@ -1,0 +1,211 @@
+@font-face {
+    font-family: 'TT Moscow Economy Bold';
+    src: url('/fonts/TT%20Moscow%20Economy%20Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'TT Moscow Economy Normal';
+    src: url('/fonts/TT%20Moscow%20Economy%20Normal.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'TT Moscow Economy Bold';
+    font-size: 14px;
+    color: rgba(57, 54, 73, 1);
+}
+
+
+.main-btn {
+    background-color: #D00E46;
+    color: white;
+    border: solid 2px #D00E46;
+    padding: 12px 16px;
+    font-weight: 800;
+    border-radius: 12px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.main-btn:hover {
+    cursor: pointer;
+}
+
+.btn-2 {
+    background-color: white;
+    color: rgba(57, 54, 73, 1);
+    border: solid 2px rgba(57, 54, 73, 1);
+    padding: 12px 16px;
+    font-weight: 800;
+    border-radius: 12px;
+    font-size: 18px;
+}
+
+.btn-2:hover {
+    cursor: pointer;
+}
+
+.text {
+    color: #161718;
+}
+
+.input {
+    border: solid 2px rgba(22, 23, 24, 0.15);
+    padding: 12px 16px;
+    border-radius: 12px;
+    font-family: 'TT Moscow Economy Normal';
+    width: 100%;
+    font-size: 14px;
+}
+
+.input:focus {
+    outline-color: #D00E46;
+}
+
+.tabcontent {
+    display: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.tab {
+    overflow: hidden;
+    /* border: 1px solid #ccc; */
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-radius: 12px;
+    max-width: 575px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+.container {
+    border: 2px solid #ccc;
+    max-width: 575px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 12px;
+    height: 100%;
+    margin-top: 10%;
+}
+
+.label {
+    font-family: 'TT Moscow Economy Normal';
+}
+
+.checkBoxContainer {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    justify-content: flex-start;
+    padding-left: 10px;
+}
+
+.checkBoxContainer input[type="checkbox"] {
+    width: 16px;
+    /* smaller width */
+    height: 16px;
+    /* smaller height */
+    margin-right: 8px;
+    /* space between checkbox and label */
+    accent-color: rgba(22, 23, 24, 0.15);
+}
+
+.checkBoxContainer label {
+    flex-grow: 1;
+}
+
+.regheader {
+    margin-bottom: 40px;
+    margin-top: 5px;
+    font-size: 34px;
+}
+
+.headercontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+    border: 2px solid #ccc;
+    margin: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 100%;
+}
+
+.optionscontainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
+}
+
+.option {
+    margin: 20px;
+    font-size: 16px;
+    font-family: 'TT Moscow Economy Normal';
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-family: 'TT Moscow Economy Normal', sans-serif;
+    font-size: 14px;
+    color: rgba(57, 54, 73, 1);
+    margin-bottom: 20px;
+    border: 2px solid rgba(57, 54, 73, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+tr {
+    border-bottom: 1px solid rgba(57, 54, 73, 0.1);
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+td,
+th {
+    padding: 12px 16px;
+    padding-left: 20px;
+    text-align: left;
+    border-right: 1px solid rgba(57, 54, 73, 0.1);
+    font-size: 18px;
+}
+
+td:last-child,
+th:last-child {
+    border-right: none;
+    margin: auto;
+}
+
+th {
+    background-color: rgba(208, 14, 70, 0.1);
+    font-weight: 800;
+    font-family: 'TT Moscow Economy Bold';
+    font-size: 16px;
+    color: #D00E46;
+}
+
+.logout-icon
+{
+    cursor: pointer;
+}

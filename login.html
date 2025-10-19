@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вход</title>
+    <link rel="icon" type="image/webp"
+        href="https://technomoscow.ru/upload/dev2fun.imagecompress/webp/local/templates/technopolis/img/favicon-32x32.webp">
+    <style>
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:disabled {
+            background-color: #6c757d;
+            cursor: not-allowed;
+        }
+
+        .error {
+            color: red;
+            margin-top: 10px;
+        }
+
+        .success {
+            color: green;
+            margin-top: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="/styles/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="regheader">Вход</div>
+        <div class="tab">
+            <button class="tablinks btn-2" onclick="openCity(event, 'registrationForm', 1)" id="1"
+                style="background-color: rgba(57, 54, 73, 1); color: white;">Резиденты</button>
+            <button class="tablinks btn-2" onclick="openCity(event, 'registrationForm2', 2)"
+                id="2">Университеты</button>
+        </div>
+        <form id="registrationForm" class="tabcontent" style="display: block;">
+            <div class="form-group">
+                <input type="text" id="login" name="username" class="input" placeholder="Логин" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="password" name="name" class="input" placeholder="Пароль" required>
+            </div>
+            <button type="submit" class="main-btn">Войти</button>
+            <p>
+                Ещё нет аккаунта?
+                <a href="registration.html" style="text-decoration: underline; color: #D00E46;">
+                    Зарегистрироваться
+                </a>
+            </p>
+        </form>
+        <form id="registrationForm2" class="tabcontent">
+            <div class="form-group">
+                <input type="text" id="uniemail" name="username" class="input" placeholder="Почта" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="unipassword" name="name" class="input" placeholder="Пароль" required>
+            </div>
+            <button type="submit" class="main-btn">Войти</button>
+            <p>
+                Ещё нет аккаунта?
+                <a href="registration.html" style="text-decoration: underline; color: #D00E46;">
+                    Зарегистрироваться
+                </a>
+            </p>
+        </form>
+        <div id="message"></div>
+    </div>
+</body>
+<script src="login.js"></script>
+
+</html>

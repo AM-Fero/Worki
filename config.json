@@ -1,0 +1,7 @@
+{
+    "dbname": "Worki_v2",
+    "user": "postgres",
+    "password": "user",
+    "host": "localhost",
+    "port": 5432
+}

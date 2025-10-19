@@ -209,8 +209,9 @@ def CompanyWorkerlogin():
 
     try:
         # Ищем пользователя в таблице Companies
-        cur.execute('SELECT * FROM "Companies" WHERE "Name" = %s', (login,))
+        cur.execute('SELECT * FROM "Companies" WHERE "Login" = %s', (login,))
         user = cur.fetchone()
+        print("im here")
         
         if user and bcrypt.checkpw(password.encode('utf-8'), user[2].encode('utf-8')):
             # Создаем JWT токен

@@ -1,6 +1,6 @@
 async function getData() {
     try {
-        // Replace with your actual endpoint URL
+        // Замените на ваш реальный URL endpoint
         const response = await fetch('http://localhost:5002//api/worki-auth/get-unis', {
             method: 'GET',
             headers: {
@@ -14,7 +14,7 @@ async function getData() {
             console.log(data);
             const parent = document.getElementById('table');
             const table = document.createElement('table');
-            table.setAttribute('border', '1'); // Optional: adds border
+            table.setAttribute('border', '1'); // Опционально: добавляет границу
             for (let i = 0; i < data['Email'].length; i++) {
                 const tr = document.createElement('tr');
                 const td = document.createElement('td')
@@ -55,8 +55,8 @@ async function getData() {
         }
 
     } catch (error) {
-        // Network or other errors
-        console.error('Fetch error:', error);
+        // Ошибки сети или другие ошибки
+        console.error('Ошибка fetch:', error);
     }
 }
 getData();

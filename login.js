@@ -1,22 +1,22 @@
 function openCity(evt, cityName, id) {
-    // Declare all variables
+    // Объявляем все переменные
     var i, tabcontent, tablinks;
     document.getElementById("message").textContent = '';
     const inputs = document.querySelectorAll('input');
     inputs.forEach(input => input.value = '');
-    // Get all elements with class="tabcontent" and hide them
+    // Получаем все элементы с class="tabcontent" и скрываем их
     tabcontent = document.getElementsByClassName("tabcontent");
     for (i = 0; i < tabcontent.length; i++) {
         tabcontent[i].style.display = "none";
     }
 
-    // Get all elements with class="tablinks" and remove the class "active"
+    // Получаем все элементы с class="tablinks" и удаляем класс "active"
     tablinks = document.getElementsByClassName("tablinks");
     for (i = 0; i < tablinks.length; i++) {
         tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
 
-    // Show the current tab, and add an "active" class to the button that opened the tab
+    // Показываем текущую вкладку и добавляем класс "active" к кнопке, которая открыла вкладку
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
 
@@ -46,7 +46,7 @@ document.getElementById('registrationForm').addEventListener('submit', async fun
     const originalText = submitButton.textContent;
     const messageDiv = document.getElementById('message');
 
-    // Show loading state
+    // Показываем состояние загрузки
     submitButton.textContent = 'Вход...';
     submitButton.disabled = true;
     messageDiv.textContent = '';
@@ -94,7 +94,7 @@ document.getElementById('registrationForm2').addEventListener('submit', async fu
     const originalText = submitButton.textContent;
     const messageDiv = document.getElementById('message');
 
-    // Show loading state
+    // Показываем состояние загрузки
     submitButton.textContent = 'Вход...';
     submitButton.disabled = true;
     messageDiv.textContent = '';
